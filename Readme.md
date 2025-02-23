@@ -1,4 +1,4 @@
-<h1> Generación de componenetes HTML en paginas web mediante código </h1>
+# Generación de componenetes HTML en paginas web mediante código
 Uso de lenguajes de programación para generar en tiempo real componentes HTML
 <br>
 <h2>Memú</h2>
