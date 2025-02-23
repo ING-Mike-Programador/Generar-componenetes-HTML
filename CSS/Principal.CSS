@@ -51,18 +51,31 @@ body {
 }
 .botonDiv{
     grid-area: 2 / 2 / span 2/ span 2;
-    margin: 1%;
     color: aliceblue;
     margin-left: 3%;
 
 }
 .diseñoTextoBoton{
     text-align: start;
-    text-shadow: 0 0 0.2em rgb(140, 0, 255);
+    text-shadow: 0 0 0.2em rgb(231, 205, 252);
+    margin: 2%;
 }
 .boton{
     width: auto;
     height: auto;
     font-size: 14px;
-    margin-top: 0%;
+    margin: 1%;
+    background-color: transparent;
+    border-color: rgb(9, 44, 75);
+    border-width: 1.5px;
+    box-shadow: 0px 0px 5px 1px var(--colorBorde); 
+    border-radius: 5px;
+    color: aliceblue;
+}
+.componenetes{
+    grid-area: 3 / 2 / span 4/ span 5;
+    height: auto;
+    width: auto;
+    background-color: rgb(59, 45, 139);
+    border-radius: 10px;
 }
