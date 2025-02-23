@@ -6,31 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica</title>
     <link rel="stylesheet" href="CSS/Principal.CSS" />
+
 </head>
 
 <body>
-    <div class="borde contenedorPrincipal resplandorBorde">
-        <div class="grid borde">
-            <div class="botonDiv">
-                <label class="texto diseñoTextoBoton">
-                    Agregar<br>
-                    componenetes
-                </label>
-                <button name="botonAgg" class="boton">
-                    Agregar
-                </button>
-            </div>
-            <div id="AgregarComponenetes" class="componenetes">
-                <p class="alinearComponentes">
-                    <label class="texto textoComponentes">Datos</label>
-                    <input class="inputComponentes" name="aggText" title="Agregar" placeholder="Ingresa texto"/>
-                    <input class="inputComponentes" name="aggText" title="Agregar" placeholder="Ingresa texto"/>
-                    <button class="botonComponentes">-</button>
-                </p>
-            </div>
 
+        <div class="borde contenedorPrincipal resplandorBorde">
+            <div class="grid borde">
+                <div class="botonDiv">
+                    <label class="texto diseñoTextoBoton">
+                        Agregar <br/>
+                        componenetes
+                        </label>
+                  
+                    <button onclick="crearComponente()" name="botonAgg" class="boton">
+                        Agregar
+                    </button>
+                    <script src="JS/aggComponenetes.js"></script>
+                </div>
+                <div id="AgregarComponenetes" class="componenetes">
+                    <p class="alinearComponentes">
+                        <label class="texto textoComponentes">Datos</label>
+                        <input class="inputComponentes" name="aggText" title="Agregar" placeholder="Ingresa texto" />
+                        <input class="inputComponentes" name="aggText2" title="Agregar" placeholder="Ingresa texto" />
+                        <button class="botonComponentes">-</button>
+                    </p>
+                </div>
+
+            </div>
         </div>
-    </div>
 </body>
 
 </html>
