@@ -1,0 +1,31 @@
+:root{
+    --colorPrincipal: rgb(18, 92, 228);
+    --colorSecundario: rgb(15, 34, 206);
+    --colorBorde: rgb(14, 16, 112);
+    --letraParrafo: 24px;
+}
+body {
+    align-items: center;
+    background: var(--colorPrincipal);
+    margin: 1%;
+}
+.texto{
+    text-align: center;
+    color: aliceblue;
+    font-size: var(--letraParrafo);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor, .contenedorPrincipal{
+    border-width: 5px;
+    border-color: var(--colorBorde);
+    border-style: solid;
+    border-radius: 55px;
+}
+.contenedorPrincipal{
+    margin-left: 5%;
+    background: var(--colorSecundario);
+    width: 90%;
+    height: 200px;
+    align-items: center;
+}
