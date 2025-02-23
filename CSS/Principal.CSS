@@ -1,31 +1,68 @@
 :root{
-    --colorPrincipal: rgb(18, 92, 228);
-    --colorSecundario: rgb(15, 34, 206);
-    --colorBorde: rgb(14, 16, 112);
-    --letraParrafo: 24px;
+    --fondoBody: rgb(71, 79, 94);
+    --fondoDivPrincipal: rgb(42, 47, 88);
+    --fondoGrid: rgb(33, 39, 88);
+    --colorBorde: rgb(139, 139, 185);
+    --colorBordeGrid: rgb(25, 29, 65);
+    --resplandorBorde: rgb(117, 117, 131);
+    --letraParrafo: 20px;
+    --alturaGrid:500px;
+    --columnas: repeat(5, 1fr); 
+    --filas: repeat(5, 1fr);
 }
 body {
     align-items: center;
-    background: var(--colorPrincipal);
+    background: var(--fondoBody);
     margin: 1%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .texto{
     text-align: center;
     color: aliceblue;
     font-size: var(--letraParrafo);
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-.contenedor, .contenedorPrincipal{
+.borde{
     border-width: 5px;
     border-color: var(--colorBorde);
     border-style: solid;
     border-radius: 55px;
+    box-shadow: 0px 1px 25px 3px var(--resplandorBorde);
+
 }
 .contenedorPrincipal{
     margin-left: 5%;
     background: var(--colorSecundario);
     width: 90%;
-    height: 200px;
-    align-items: center;
+    height: auto;
+}
+.grid{
+    width: 90%;
+    height: var(--alturaGrid);
+    margin: 5%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background: var(--fondoGrid);
+    display: grid;
+    grid-template: 20px var(--columnas) 20px/20px var(--filas) 20px;
+    border-color: var(--colorBordeGrid);
+    border-width: 2px;
+    box-shadow: 0px 0px 5px 1px var(--colorBordeGrid);
+}
+.botonDiv{
+    grid-area: 2 / 2 / span 2/ span 2;
+    margin: 1%;
+    color: aliceblue;
+    margin-left: 3%;
+
+}
+.diseñoTextoBoton{
+    text-align: start;
+    text-shadow: 0 0 0.2em rgb(140, 0, 255);
+}
+.boton{
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    margin-top: 0%;
 }
