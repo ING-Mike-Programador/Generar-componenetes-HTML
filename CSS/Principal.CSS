@@ -3,9 +3,12 @@
     --fondoDivPrincipal: rgb(42, 47, 88);
     --fondoGrid: rgb(33, 39, 88);
     --colorBorde: rgb(139, 139, 185);
+    --fondoBotonComponentes:linear-gradient(rgb(189, 16, 16),rgb(110, 21, 21));
+    --colorBordeBotonComponenetes: rgb(110, 57, 21);
     --colorBordeGrid: rgb(25, 29, 65);
     --resplandorBorde: rgb(117, 117, 131);
     --letraParrafo: 20px;
+    --letraInput: 15px;
     --alturaGrid:500px;
     --columnas: repeat(5, 1fr); 
     --filas: repeat(5, 1fr);
@@ -60,7 +63,7 @@ body {
     text-shadow: 0 0 0.2em rgb(231, 205, 252);
     margin: 2%;
 }
-.boton{
+.boton, .botonComponentes{
     width: auto;
     height: auto;
     font-size: 14px;
@@ -78,4 +81,29 @@ body {
     width: auto;
     background-color: rgb(59, 45, 139);
     border-radius: 10px;
+    align-items: center;
+}
+.alinearComponentes{
+    margin-left: 3%;
+}
+.textoComponentes{
+    margin-right: 1%;
+}
+.inputComponentes{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--letraInput);
+    height: 24px;
+    width: 300px;
+    border-color: var(--colorBordeGrid);
+    border-radius: 5px;
+    border-width: 2px;
+    text-align: center;
+}
+.botonComponentes{
+    width: 22px;
+    height: 22px;
+    font-size: 18px;
+    background: var(--fondoBotonComponentes);
+    border-width: 1.5px;
+    box-shadow: 0px 0px 5px .5px var(--colorBordeBotonComponenetes); 
 }
