@@ -10,31 +10,31 @@
 </head>
 
 <body>
+    <div class="borde contenedorPrincipal resplandorBorde">
+        <div class="grid borde">
+            <div class="botonDiv">
+                <label class="texto diseñoTextoBoton">
+                    Agregar <br />
+                    componenetes
+                </label>
 
-        <div class="borde contenedorPrincipal resplandorBorde">
-            <div class="grid borde">
-                <div class="botonDiv">
-                    <label class="texto diseñoTextoBoton">
-                        Agregar <br/>
-                        componenetes
-                        </label>
-                  
-                    <button onclick="crearComponente()" name="botonAgg" class="boton">
-                        Agregar
-                    </button>
-                    <script src="JS/aggComponenetes.js"></script>
-                </div>
-                <div id="AgregarComponenetes" class="componenetes">
-                    <p class="alinearComponentes">
-                        <label class="texto textoComponentes">Datos</label>
-                        <input class="inputComponentes" name="aggText" title="Agregar" placeholder="Ingresa texto" />
-                        <input class="inputComponentes" name="aggText2" title="Agregar" placeholder="Ingresa texto" />
-                        <button onclick="eliminarComponente(this)" class="botonComponentes">-</button>
-                    <script src="JS/aggComponenetes.js"></script>
-                </div>
-
+                <button onclick="crearComponente()" name="botonAgg" class="boton">
+                    Agregar
+                </button>
+                <script src="JS/aggComponenetes.js"></script>
             </div>
+            <div id="AgregarComponentes" class="componentes">
+                <p class="alinearComponentes">
+                    <label class="texto textoComponentes">Datos</label>
+                    <input class="inputComponentes" placeholder="Ingresa texto" />
+                    <input class="inputComponentes" placeholder="Ingresa texto" />
+                    <button onclick="eliminarComponente(this)" class="botonComponentes">-</button>
+                </p>
+                <script src="JS/aggComponenetes.js"></script>
+            </div>
+
         </div>
+    </div>
 </body>
 
 </html>

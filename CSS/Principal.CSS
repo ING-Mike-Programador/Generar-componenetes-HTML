@@ -75,7 +75,7 @@ body {
     border-radius: 5px;
     color: aliceblue;
 }
-.componenetes{
+.componentes{
     grid-area: 3 / 2 / span 4/ span 5;
     height: auto;
     width: auto;
